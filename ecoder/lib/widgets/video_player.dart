@@ -28,17 +28,17 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        shape: const RoundedRectangleBorder(
-      borderRadius: BorderRadius.only(
-        bottomLeft: Radius.circular(20), // Change this value to your desired radius
-        bottomRight: Radius.circular(20), // Change this value to your desired radius
-      ),
-    ),
-         backgroundColor: const Color.fromRGBO(230, 57, 70,1), // RGB color (0, 0, 255) with opacity 1
+     // appBar: AppBar(
+   //    shape: const RoundedRectangleBorder(
+   //   borderRadius: BorderRadius.only(
+  //      bottomLeft: Radius.circular(20), // Change this value to your desired radius
+   //     bottomRight: Radius.circular(20), // Change this value to your desired radius
+   //   ),
+   // ),
+      //   backgroundColor: const Color.fromRGBO(230, 57, 70,1), // RGB color (0, 0, 255) with opacity 1
 
-        title: const Text('Video Player'),
-      ),
+       // title: const Text('Video Player'),
+    //  ),
       body: Center(
         child: YoutubePlayer(
           controller: _controller,
