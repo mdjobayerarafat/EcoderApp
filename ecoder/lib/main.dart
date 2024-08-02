@@ -1,4 +1,6 @@
 import 'package:ecoder/screens/home_page.dart';
+import 'package:ecoder/screens/splash_screen.dart';
+
 import 'package:ecoder/widgets/navigation_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -19,10 +21,12 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: const Color(0xFF00001d),
       ),
       
-       home: HomePage(),
-        // bottomNavigationBar: MyNavigationBar(),
-             
-       
+       home:     const SafeArea(
+         child: Scaffold(
+          body:HomePage(),
+         bottomNavigationBar: MyNavigationBar(),
+             ),
+       ),
     );
     
   }

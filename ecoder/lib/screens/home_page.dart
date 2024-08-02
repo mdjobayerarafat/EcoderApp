@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:ecoder/widgets/image_slider.dart';
 import 'package:scaler/scaler.dart';
 
-import '../widgets/navigation_bar.dart';
+
 
 
 class HomePage extends StatefulWidget {
@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                          // ignore: sort_child_properties_last
                          child:  const ImageSlider(),
                         
-                         height: Scaler.height(0.29, context),
+                         height: Scaler.height(0.30, context),
                          width: Scaler.width(0.90, context),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(16.0),
@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage> {
                    
                     ],
                   ),
-                  //const SizedBox(height: 16.0),
+                  const SizedBox(height: 16.0),
                   
                   //const SizedBox(height: 16.0),
                  
@@ -89,7 +89,7 @@ class _HomePageState extends State<HomePage> {
                       
                       
               
-               const Expanded(child: MyNavigationBar(),)
+               
               
                   
                 ],

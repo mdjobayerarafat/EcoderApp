@@ -26,7 +26,7 @@ class _ImageSliderState extends State<ImageSlider> {
     return Scaffold(
       
       body: Container(
-        height: Scaler.height(0.29, context),
+        height: Scaler.height(0.30, context),
                            width: Scaler.width(0.90, context),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(16.0),
@@ -45,16 +45,14 @@ class _ImageSliderState extends State<ImageSlider> {
           children: [
             CarouselSlider(
               items: imgList
-                  .map((item) => Container(
-                child: Center(
-                  child: Image.network(
-                    item,
-                    fit: BoxFit.cover,
-                   height: Scaler.height(0.29, context),
-                           
-                  ),
-                ),
-              ))
+                  .map((item) => Center(
+                    child: Image.network(
+                      item,
+                      fit: BoxFit.cover,
+                     height: Scaler.height(0.30, context),
+                             
+                    ),
+                  ))
                   .toList(),
               carouselController: _controller,
               options: CarouselOptions(
