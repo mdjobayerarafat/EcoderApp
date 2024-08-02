@@ -1,6 +1,7 @@
 import 'package:ecoder/widgets/category_card.dart';
 import 'package:flutter/material.dart';
 
+// ignore: unused_import
 import '../widgets/navigation_bar.dart';
 
 

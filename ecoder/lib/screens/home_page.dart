@@ -2,7 +2,6 @@
 import 'package:ecoder/widgets/card.dart';
 import 'package:flutter/material.dart';
 import 'package:ecoder/widgets/image_slider.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:scaler/scaler.dart';
 
 import '../widgets/navigation_bar.dart';
@@ -41,6 +40,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
+        // ignore: avoid_unnecessary_containers
         child: Container(
           child: Center(
             child: Column(
@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       Container(
                          // ignore: sort_child_properties_last
-                         child:  ImageSlider(),
+                         child:  const ImageSlider(),
                         
                          height: Scaler.height(0.29, context),
                          width: Scaler.width(0.90, context),

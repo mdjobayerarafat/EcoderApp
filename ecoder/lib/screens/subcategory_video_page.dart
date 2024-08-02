@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../models/data_model.dart';
 import '../services/api_service.dart';
+// ignore: unused_import
 import '../widgets/navigation_bar.dart';
 
 
@@ -49,7 +50,7 @@ Widget build(BuildContext context) {
         bottomRight: Radius.circular(20), // Change this value to your desired radius
       ),
     ),
-       backgroundColor: Color.fromRGBO(230, 57, 70,1), // RGB color (0, 0, 255) with opacity 1
+       backgroundColor: const Color.fromRGBO(230, 57, 70,1), // RGB color (0, 0, 255) with opacity 1
 
       title: Text(widget.subccategory),
     ),
@@ -62,7 +63,7 @@ Widget build(BuildContext context) {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16.0),
                 ),
-                color: Color(0xFF456F9D),
+                color: const Color(0xFF456F9D),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
