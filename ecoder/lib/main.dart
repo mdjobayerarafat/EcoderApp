@@ -19,12 +19,10 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: const Color(0xFF00001d),
       ),
       
-       home:    const SafeArea(
-         child: Scaffold(
-          body:HomePage(),
-         bottomNavigationBar: MyNavigationBar(),
-             ),
-       ),
+       home: HomePage(),
+        // bottomNavigationBar: MyNavigationBar(),
+             
+       
     );
     
   }
