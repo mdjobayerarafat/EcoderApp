@@ -15,9 +15,15 @@ class ImageSlider extends StatefulWidget {
 class _ImageSliderState extends State<ImageSlider> {
   int _current = 0;
   final List<String> imgList = [
-    'https://wearebrain.com/wp-content/uploads/2023/01/Frontend-trends-for-2023.png',
-    'https://wearebrain.com/wp-content/uploads/2023/01/Frontend-trends-for-2023.png',
-    'https://wearebrain.com/wp-content/uploads/2023/01/Frontend-trends-for-2023.png',
+    'assets/images/1.png',
+    'assets/images/2.png',
+    'assets/images/3.png',
+    'assets/images/4.png',
+    'assets/images/5.png',
+    'assets/images/6.png',
+    'assets/images/7.png',
+    'assets/images/8.png',
+    //'assets/images/9.jpg',
   ];
   final CarouselController _controller = CarouselController();
 
@@ -32,8 +38,8 @@ class _ImageSliderState extends State<ImageSlider> {
                             borderRadius: BorderRadius.circular(16.0),
                             gradient: const LinearGradient(
                               colors: [
-                                Color(0xFF212121),
-                                Color(0xFF121212),
+                                Color.fromRGBO(168, 218, 220,1),
+                                Color.fromARGB(255, 94, 92, 92),
                               ],
                               begin: Alignment.topCenter,
                               end: Alignment.bottomCenter,
@@ -46,7 +52,7 @@ class _ImageSliderState extends State<ImageSlider> {
             CarouselSlider(
               items: imgList
                   .map((item) => Center(
-                    child: Image.network(
+                    child: Image.asset(
                       item,
                       fit: BoxFit.cover,
                      height: Scaler.height(0.30, context),
