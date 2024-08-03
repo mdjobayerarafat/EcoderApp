@@ -1,16 +1,16 @@
-import 'package:ecoder/screens/home_page.dart';
-import 'package:ecoder/screens/splash_screen.dart';
 
-import 'package:ecoder/widgets/navigation_bar.dart';
+
 import 'package:flutter/material.dart';
 
 
-void main() {
-  runApp(const MyApp());
-}
+import '../widgets/navigation_bar.dart';
+import 'home_page.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+
+
+
+class HomeePage extends StatelessWidget {
+  const HomeePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,11 +23,10 @@ class MyApp extends StatelessWidget {
       
        home:     const SafeArea(
          child: Scaffold(
-          body:SplashScreen(),
-        // bottomNavigationBar: MyNavigationBar(),
+          body:HomePage(),
+         bottomNavigationBar: MyNavigationBar(),
              ),
        ),
     );
-    
   }
 }

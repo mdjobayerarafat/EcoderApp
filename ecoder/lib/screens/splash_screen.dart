@@ -1,8 +1,10 @@
 import 'dart:async';
 
-import 'package:ecoder/screens/home_page.dart';
+//import 'package:ecoder/screens/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+
+import 'homepage.dart';
 
 
 class SplashScreen extends StatefulWidget {
@@ -30,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
   onDoneLoading() {
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
-        builder: ((context) => const HomePage()),
+        builder: ((context) => const HomeePage()),
       ),
     );
   }
